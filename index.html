@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Künstlerin – Barbara Speh-Freidank</title>
-    <img src="bild0.jpg" alt="Barbara">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <style>
@@ -27,6 +26,16 @@
 
         header p {
             color: #666;
+        }
+
+        /* Portrait */
+        .portrait {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: 20px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
         }
 
         section {
@@ -83,7 +92,6 @@
         footer a:hover {
             text-decoration: underline;
         }
-
     </style>
 </head>
 
@@ -91,6 +99,10 @@
 
 <header>
     <h1>Barbara Speh-Freidank</h1>
+
+    <!-- Portrait direkt unter dem Namen -->
+    <img src="portrait.jpg" alt="Barbara Speh-Freidank" class="portrait">
+
     <p>Künstlerin</p>
 </header>
 
@@ -158,8 +170,8 @@ Seit 2020 bilde ich mich regelmäßig durch mehrtägige Seminare zum Thema „fr
 
 <section>
     <h2>Kontakt</h2>
-<p>Email: barbara.speh-freidank@gmx.de</p>
-<p>Mobil: 0172 5948014</p>
+    <p>Email: <a href="mailto:Barbara.Speh-Freidank@gmx.de">Barbara.Speh-Freidank@gmx.de</a></p>
+    <p>Mobil: 0172 5948014</p>
 </section>
 
 <footer>
@@ -169,7 +181,7 @@ Seit 2020 bilde ich mich regelmäßig durch mehrtägige Seminare zum Thema „fr
         Koßmänneweg 43<br>
         73732 Esslingen<br><br>
 
-        Email: barbara.speh-freidank@gmx.de
+        Email: Barbara.Speh-Freidank@gmx.de
     </p>
 
     <p>
