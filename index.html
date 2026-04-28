@@ -3,20 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <title>Künstlerin – Barbara Speh-Freidank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <style>
-        body { font-family: Arial; max-width: 800px; margin: auto; padding: 20px; }
-        h1 { color: #333; }
-        img { max-width: 100%; height: auto; margin-bottom: 20px; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+            margin: 0;
+            background: #fafafa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            color: #666;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            margin-top: 25px;
+            color: #555;
+        }
+
+        /* Galerie */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        /* Impressum */
+        footer {
+            background: #111;
+            color: #eee;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
+
 <body>
 
-<h1>Barbara Speh-Freidank</h1>
-<p><b>Künstlerin</b></p>
-<img src="bild0.jpg" alt="Barbara">    
+<header>
+    <h1>Barbara Speh-Freidank</h1>
+    <p>Künstlerin</p>
+</header>
 
-<h2>Über mich</h2>
-<h3>Beruflicher und persönlicher Werdegang</h3>
+<section>
+    <h2>Über mich</h2>
+
+   <h3>Beruflicher und persönlicher Werdegang</h3>
 <p>
 1959 in Stuttgart geboren, in Esslingen aufgewachsen und zur Schule gegangen, nahm ich nach dem Abitur das Studium der Rechtswissenschaften in Heidelberg auf, wo ich 1984 das erste juristische Staatsexamen ablegte. Es folgte das Referendariat im Landgerichtsbezirk Stuttgart und 1987 das zweite juristische Staatsexamen.
 </p>
@@ -45,8 +125,8 @@ Später kam die Anfertigung von Monotypien und Lithographien hinzu.
 Seit 2020 bilde ich mich regelmäßig durch mehrtägige Seminare zum Thema „freie Abstraktion und Technik“ bei Ran-Sou Shin von der Heyden fort, insbesondere in der Fabrik am See (Akademie für zeitgenössische Kunst in Horn am Bodensee) und in der Kunstakademie Römerstein.
 </p>
 
-<h3>Ausstellungen</h3>
-<ul>
+    <h3>Ausstellungen</h3>
+    <ul>
     <li>1999 Gemeinschaftsausstellung Rechtsanwaltskanzlei ZFZ Esslingen</li>
     <li>2000 Ausstellung Forum Heppächer, Esslingen</li>
     <li>2003 Ausstellung Karstadt, Kultur Live, Esslingen</li>
@@ -59,19 +139,42 @@ Seit 2020 bilde ich mich regelmäßig durch mehrtägige Seminare zum Thema „fr
     <li>2014 Gemeinschaftsausstellung Krankenpflegeverein Nellingen</li>
     <li>2015 Gemeinschaftsausstellung „Kunst in Leinfelden-Echterdingen“</li>
     <li>2015 Gemeinschaftsausstellung im „Steiner am Fluss“ in Plochingen</li>
-</ul>
+    </ul>
+</section>
 
-<h2>Werke</h2>
+<section>
+    <h2>Werke</h2>
+
+    <div class="gallery">
 <img src="bild1.jpg" alt="Werk 1">
 <img src="bild2.jpg" alt="Werk 2">
 <img src="bild3.jpg" alt="Werk 3">
 <img src="bild4.jpg" alt="Werk 4">
 <img src="bild5.jpg" alt="Werk 5">    
 <img src="bild6.jpg" alt="Werk 6">
-    
-<h2>Kontakt</h2>
+    </div>
+</section>
+
+<section>
+    <h2>Kontakt</h2>
 <p>Email: barbara.speh-freidank@gmx.de</p>
 <p>Mobil: 0172 5948014</p>
+</section>
+
+<footer>
+    <h2>Impressum</h2>
+    <p>
+        Barbara Speh-Freidank<br>
+        Koßmänneweg 43<br>
+        73732 Esslingen<br><br>
+
+        Email: barbara.speh-freidank@gmx.de
+    </p>
+
+    <p>
+        Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV: Barbara Speh-Freidank
+    </p>
+</footer>
 
 </body>
 </html>
